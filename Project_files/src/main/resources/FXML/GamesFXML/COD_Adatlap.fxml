@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="810.0" stylesheets="@../../CSS/Adatlap.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.GamesController.COD_Controller">
+   <children>
+      <Pane layoutY="125.0" prefHeight="475.0" prefWidth="810.0">
+         <children>
+            <TextArea editable="false" layoutX="256.0" layoutY="191.0" prefHeight="222.0" prefWidth="527.0" text="Az új Call of Duty: Modern Warfare kampánya sötétebb, erőszakosabb, akciódúsabb  &#10;és izgalmasabb, mint bármi, amit eddig a sorozatban láthattunk. Különleges elit katonákat, &#10;Tier One harcosokat irányíthatunk, akik Európában, illetve a Közel-Keleten indulnak  &#10;küldetésekre. A történet alakulása kihatással lehet a világ nagyhatalmaira, és  &#10;megrengetheti a fennálló világrendet. Az egyes küldetések során nemzetközi titkos  &#10;ügynökökkel és más katonai csoportokkal együttműködve kell megoldanunk a feladatokat.  &#10;Bár az új Call of Duty továbbra is klasszikus FPS, a játékmenet igen változatos.  &#10;A közelharc és a megszokott tűzharcok mellett lopakodásra és  &#10;mesterlövész képességeinkre is szükség lesz, az akció pedig  éjjel és nappal, &#10;napsütésben és viharban, erdőben és sivatagban is  ugyanolyan kihívást jelent majd.">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </TextArea>
+            <JFXButton id="trailerButton" fx:id="trailerButton" alignment="BOTTOM_CENTER" layoutX="303.0" layoutY="143.0" onAction="#trailerButtonClicked" prefHeight="18.0" prefWidth="66.0" text="Trailer" textAlignment="CENTER">
+               <font>
+                  <Font name="Impact" size="15.0" />
+               </font>
+            </JFXButton>
+            <Label alignment="CENTER_RIGHT" layoutX="285.0" layoutY="25.0" text="Megjelenés:" textAlignment="CENTER">
+               <font>
+                  <Font name="Impact" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="285.0" layoutY="56.0" prefHeight="17.0" prefWidth="75.0" text="Kiadó:" textAlignment="CENTER">
+               <font>
+                  <Font name="Impact" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="285.0" layoutY="86.0" prefHeight="17.0" prefWidth="75.0" text="Platformok:" textAlignment="CENTER">
+               <font>
+                  <Font name="Impact" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="285.0" layoutY="118.0" prefHeight="17.0" prefWidth="75.0" text="Műfaj:" textAlignment="CENTER">
+               <font>
+                  <Font name="Impact" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="375.0" layoutY="25.0" text="Augusztus 23, 2019">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="375.0" layoutY="56.0" text="Activision">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="375.0" layoutY="86.0" text="PC, PS4, XBOX ONE">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="375.0" layoutY="118.0" text="First-person shooter">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="saveSuc" layoutX="356.0" layoutY="437.0" prefHeight="24.0" prefWidth="132.0" text="Sikeres mentés!" textFill="#3dda35" visible="false">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane prefHeight="125.0" prefWidth="810.0" style="-fx-background-color: #6747CD;">
+         <children>
+            <ImageView fitHeight="200.0" fitWidth="300.0" layoutX="99.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Pictures/cod.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="275.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Call of Duty: Modern Warfare">
+               <font>
+                  <Font name="Impact" size="20.0" />
+               </font>
+            </Text>
+            <JFXButton id="backButton" fx:id="backButton" layoutX="6.0" layoutY="82.0" onAction="#backButtonClicked" prefHeight="24.0" prefWidth="87.0" text="Vissza" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Pictures/back.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton id="saveButton" fx:id="saveButton" layoutX="620.0" layoutY="82.0" onAction="#saveButtonClicked" prefHeight="24.0" text="Mentés a könyvtárba" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Pictures/save.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

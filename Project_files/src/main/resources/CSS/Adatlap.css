@@ -1,0 +1,49 @@
+#backButton{
+    -fx-background-color: #6747CD;
+    -fx-background-radius: 0px;
+}
+
+#backButton:hover{
+    -fx-background-color: #6747CD;
+    -fx-background-radius: 0px;
+    -fx-border-color: #000000;
+    -fx-border-width: 0px 0px 0px 5px;
+    -fx-border-style: solid;
+}
+
+.text-area {
+    -fx-background-color: #DCDCDC;
+}
+
+.text-area .scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.text-area .scroll-pane .viewport{
+    -fx-background-color: transparent;
+}
+
+.text-area .scroll-pane .content{
+    -fx-background-color: transparent;
+}
+
+#trailerButton{
+    -fx-text-fill: #6747CD;
+    -fx-background-radius: 0px;
+}
+
+#trailerButton:hover {
+    -fx-text-fill: #000000;
+}
+
+#saveButton {
+    -fx-background-radius: 0px;
+}
+
+#saveButton:hover{
+    -fx-background-color: #6747CD;
+    -fx-background-radius: 0px;
+    -fx-border-color: #000000;
+    -fx-border-width: 0px 5px 0px 0px;
+    -fx-border-style: solid;
+}

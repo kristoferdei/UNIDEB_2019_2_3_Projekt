@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="810.0" stylesheets="@../../CSS/Adatlap.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.GamesController.SW_Adatlap">
+   <children>
+      <Pane layoutY="125.0" prefHeight="475.0" prefWidth="810.0">
+         <children>
+            <TextArea editable="false" layoutX="256.0" layoutY="191.0" prefHeight="222.0" prefWidth="527.0" text="Éld át Cal epikus kalandját ismert és vadonatúj Star Wars világokban! &#10; Válj igazi Jedi lovaggá néhány barát, és a kis droid társad,  &#10;BD-1 segítségével. Használd fénykardodat és az Erőt, hogy legyőzd az ellenséget,  &#10;és járd végig az utadat egy sötét, mégis reményteli és felemelő, igazi egyjátékos  &#10;Star Wars kalandban! Lenyűgöző Unreal Engine grafikával, gyors,  &#10;de taktikus harcokkal és változatos helyszínekkel a Jedi: Fallen Order az a kalandjáték,  &#10;amit a Csillagok Háborúja rajongók már nagyon régóta várnak.">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </TextArea>
+            <JFXButton id="trailerButton" fx:id="trailerButton" alignment="BOTTOM_CENTER" layoutX="303.0" layoutY="143.0" onAction="#trailerButtonClicked" prefHeight="18.0" prefWidth="66.0" text="Trailer" textAlignment="CENTER">
+               <font>
+                  <Font name="Impact" size="15.0" />
+               </font>
+            </JFXButton>
+            <Label alignment="CENTER_RIGHT" layoutX="285.0" layoutY="25.0" text="Megjelenés:" textAlignment="CENTER">
+               <font>
+                  <Font name="Impact" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="285.0" layoutY="56.0" prefHeight="17.0" prefWidth="75.0" text="Kiadó:" textAlignment="CENTER">
+               <font>
+                  <Font name="Impact" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="285.0" layoutY="86.0" prefHeight="17.0" prefWidth="75.0" text="Platformok:" textAlignment="CENTER">
+               <font>
+                  <Font name="Impact" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="285.0" layoutY="118.0" prefHeight="17.0" prefWidth="75.0" text="Műfaj:" textAlignment="CENTER">
+               <font>
+                  <Font name="Impact" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="375.0" layoutY="25.0" text="November 15, 2019">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="375.0" layoutY="56.0" text="Electronic Arts">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="375.0" layoutY="86.0" text="PC, PS4, XBOX ONE">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="375.0" layoutY="118.0" text="Action-adventure">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="saveSuc" layoutX="356.0" layoutY="437.0" prefHeight="24.0" prefWidth="132.0" text="Sikeres mentés!" textFill="#3dda35" visible="false">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane prefHeight="125.0" prefWidth="810.0" style="-fx-background-color: #6747CD;">
+         <children>
+            <ImageView fitHeight="200.0" fitWidth="300.0" layoutX="99.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Pictures/sw.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="275.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Star Wars Jedi (Star Wars Jedi: Fallen Order)">
+               <font>
+                  <Font name="Impact" size="20.0" />
+               </font>
+            </Text>
+            <JFXButton id="backButton" fx:id="backButton" layoutX="6.0" layoutY="82.0" onAction="#backButtonClicked" prefHeight="24.0" prefWidth="87.0" text="Vissza" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Pictures/back.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton id="saveButton" fx:id="saveButton" layoutX="620.0" layoutY="82.0" onAction="#saveButtonClicked" prefHeight="24.0" text="Mentés a könyvtárba" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Pictures/save.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

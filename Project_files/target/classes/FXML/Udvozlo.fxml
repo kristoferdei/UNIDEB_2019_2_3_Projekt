@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="480.0" style="-fx-background-color: #DCDCDC;" stylesheets="@../CSS/Udvozlo.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Udvozlo">
+   <children>
+      <Pane id="alertPane" fx:id="alertPane" layoutX="40.0" layoutY="260.0" prefHeight="200.0" prefWidth="400.0" style="-fx-border-color: #545454; -fx-background-color: #FFFFFF;" visible="false">
+         <children>
+            <JFXButton id="alertButton" fx:id="alertButton" layoutX="174.0" layoutY="153.0" onAction="#alertButtonClicked" prefHeight="33.0" prefWidth="52.0" text="OK">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font></JFXButton>
+            <Label layoutX="75.0" layoutY="83.0" text="Helytelen felhasználónév vagy jelszó!" textFill="#545454">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font></Label>
+         </children>
+      </Pane>
+      <Pane id="signPane" fx:id="signPane" prefHeight="720.0" prefWidth="480.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <JFXButton id="signInButton" fx:id="signInButton" layoutX="144.0" layoutY="441.0" onAction="#signInButtonClicked" prefHeight="45.0" prefWidth="202.0" ripplerFill="WHITE" text="Bejelentkezés" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="signInGuestButton" fx:id="signInGuestButton" layoutX="144.0" layoutY="504.0" onAction="#signInGuestButtonClicked" prefHeight="33.0" prefWidth="202.0" text="Bejelentkezés vendégként" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="newPassButton" fx:id="newPassButton" layoutX="212.0" layoutY="376.0" onAction="#newPassButtonClicked" text="Elfelejtetted a jelszavad?" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="regButton" fx:id="regButton" layoutX="266.0" layoutY="614.0" onAction="#regButtonClicked" text="Regisztrálj" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXTextField id="userName" fx:id="userName" focusColor="#6747cd" labelFloat="true" layoutX="139.0" layoutY="265.0" maxWidth="202.0" minWidth="202.0" prefHeight="33.0" prefWidth="202.0" promptText="Felhasználónév" unFocusColor="#6747cd">
+               <font>
+                  <Font name="Impact" size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField id="passWord" fx:id="passWord" focusColor="#6747cd" labelFloat="true" layoutX="139.0" layoutY="327.0" maxWidth="202.0" minWidth="202.0" prefHeight="33.0" prefWidth="202.0" promptText="Jelszó" unFocusColor="#6747cd">
+               <font>
+                  <Font name="Impact" size="14.0" />
+               </font>
+            </JFXPasswordField>
+            <Label layoutX="133.0" layoutY="73.0" text="Game_Over" textFill="#545454">
+               <font>
+                  <Font name="Impact" size="45.0" />
+               </font>
+            </Label>
+            <Label layoutX="133.0" layoutY="213.0" text="Jelentkezz be!" textFill="#a3a3a3">
+               <font>
+                  <Font name="Impact" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="142.0" layoutY="619.0" text="Új felhasználó?" textFill="#a3a3a3">
+               <font>
+                  <Font name="Impact" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.paint.*?>
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="600.0" stylesheets="@../CSS/Regisztracio.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Regisztracio">
+   <children>
+      <Pane id="registPane" fx:id="registPane" prefHeight="300.0" prefWidth="600.0">
+         <children>
+            <Label fx:id="warningName" layoutX="400.0" layoutY="121.0" text="Kérlek ne hagyd üresen!" textFill="CRIMSON" visible="false">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="warningPassw" layoutX="400.0" layoutY="182.0" prefHeight="20.0" prefWidth="186.0" text="Kérlek ne hagyd üresen!" textFill="CRIMSON" visible="false">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="211.0" layoutY="29.0" text="Regisztráció" textFill="#545454">
+               <font>
+                  <Font name="Impact" size="35.0" />
+               </font>
+            </Label>
+            <JFXButton id="registButton" fx:id="registButton" layoutX="206.0" layoutY="244.0" onAction="#registCheck" prefHeight="33.0" prefWidth="188.0" text="Regisztrálok">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXTextField id="registName" fx:id="registName" focusColor="#6747cd" labelFloat="true" layoutX="206.0" layoutY="114.0" promptText="Felhasználónév" unFocusColor="#6747cd">
+               <font>
+                  <Font name="Impact" size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField id="registPasw" fx:id="registPasw" focusColor="#6747cd" labelFloat="true" layoutX="206.0" layoutY="175.0" promptText="Jelszó" unFocusColor="#6747cd">
+               <font>
+                  <Font name="Impact" size="14.0" />
+               </font>
+            </JFXPasswordField>
+            <Label layoutX="20.0" layoutY="123.0" text="Adj meg egy felhasználónevet:" textFill="#545454">
+               <font>
+                  <Font name="Impact" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="20.0" layoutY="183.0" prefHeight="17.0" prefWidth="173.0" text="Adj meg egy jelszót:" textFill="#545454">
+               <font>
+                  <Font name="Impact" size="14.0" />
+               </font>
+            </Label>
+            <JFXButton id="backButton" fx:id="backButton" layoutX="493.0" layoutY="244.0" onAction="#backButtonClicked" prefHeight="33.0" prefWidth="90.0" text="Vissza" textFill="#545454">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Pictures/back.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
